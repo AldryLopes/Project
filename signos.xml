@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<signos>
+   <signo>
+       <dataInicio>21/03</dataInicio>
+       <dataFim>20/04</dataFim>
+       <signoNome>ÁRIES</signoNome>
+       <imagem>imagens/gemeos.png</imagem>
+       <descricao> Impulsivo, corajoso e sempre pronto para liderar, o ariano adora desafios e novas aventuras. 
+                   Se você é do signo de Áries, provavelmente gosta de manter as coisas em movimento e não tem paciência para esperar. 
+                   Na decoração, ambientes dinâmicos e vibrantes são a sua cara – pense em cores quentes e peças que refletem seu espírito pioneiro.
+       </descricao>
+   </signo>
+
+
+   <signo>
+       <dataInicio>21/04</dataInicio>
+       <dataFim>20/05</dataFim>
+       <signoNome>TOURO</signoNome>
+       <descricao>Os taurinos são conhecidos por sua persistência e apreço pelas coisas boas da vida. 
+                  Conforto e beleza são essenciais para você. O signo de Touro gosta de ambientes que tragam sensações de aconchego e segurança.
+                  Aposte em móveis de qualidade e uma paleta de cores suaves para criar um refúgio perfeito para recarregar as energias.
+       </descricao>
+   </signo>
+
+
+   <signo>
+       <dataInicio>21/05</dataInicio>
+       <dataFim>20/06</dataFim>
+       <signoNome>GÊMEOS</signoNome>
+       <descricao>Adaptável e cheio de curiosidade, o geminiano é aquele que adora variedade e mudança. 
+                  Se você é do signo de Gêmeos, precisa de um espaço versátil que acompanhe sua mente inquieta. 
+                  Móveis modulares, cores vibrantes e peças que despertem conversas são ideais para o seu estilo de vida.
+       </descricao>
+   </signo>
+
+
+   <signo>
+       <dataInicio>21/06</dataInicio>
+       <dataFim>22/07</dataFim>
+       <signoNome>CÂNCER</signoNome>
+       <descricao>Emocional e ligado às raízes, o canceriano valoriza laços afetivos e a sensação de lar. 
+                  Se você é de Câncer, sua casa é seu santuário. Decoração com toques pessoais, como fotos de 
+                  família e lembranças de viagens, cria o ambiente acolhedor que tanto ama.
+                   
+       </descricao>
+   </signo>
+
+
+   <signo>
+       <dataInicio>23/07</dataInicio>
+       <dataFim>22/08</dataFim>
+       <signoNome>LEÃO</signoNome>
+       <descricao>Leão é o signo da grandiosidade e do brilho. Se você é leonino, gosta de estar no centro das atenções, e seu espaço deve refletir isso. 
+                  Cores ousadas, arte imponente e peças que exalem luxo são a chave para criar um ambiente que faça jus à majestade deste signo.
+                   
+       </descricao>
+   </signo>
+
+
+   <signo>
+       <dataInicio>23/08</dataInicio>
+       <dataFim>22/09</dataFim>
+       <signoNome>VIRGEM</signoNome>
+       <descricao>Prático, detalhista e organizado, o virginiano adora um espaço funcional. 
+                  Se você é de Virgem, prefere ambientes minimalistas, onde tudo tem seu lugar. 
+                  Invista em móveis com duplas funções e uma decoração clean para garantir que seu espaço sempre esteja em ordem.
+                   
+       </descricao>
+   </signo>
+
+
+   <signo>
+       <dataInicio>23/09</dataInicio>
+       <dataFim>23/10</dataFim>
+       <signoNome>LIBRA</signoNome>
+       <descricao>Amante da harmonia e da beleza, o libriano busca equilíbrio em todos os aspectos da vida. 
+                  Se você é de Libra, gosta de ambientes que transmitam paz e sofisticação. 
+                  Aposte em tons neutros e uma decoração simétrica para criar um espaço que seja visualmente agradável e convidativo para os nativos deste signo.
+                   
+       </descricao>
+   </signo>
+
+
+   <signo>
+       <dataInicio>23/10</dataInicio>
+       <dataFim>21/11</dataFim>
+       <signoNome>ESCORPIÃO</signoNome>
+       <descricao>Intenso e misterioso, o escorpiano é conhecido por sua profundidade emocional. 
+                  Se você é de Escorpião, provavelmente prefere ambientes que reflitam sua complexidade. 
+                  Cores escuras, texturas intrigantes e decoração dramática são perfeitos para criar o refúgio que você deseja.
+                   
+       </descricao>
+   </signo>
+
+
+   <signo>
+       <dataInicio>22/11</dataInicio>
+       <dataFim>21/12</dataFim>
+       <signoNome>SAGITÁRIO</signoNome>
+       <descricao>Otimista e aventureiro, o sagitariano tem um espírito livre que adora explorar o mundo. 
+                  Se você é de Sagitário, precisa de um espaço que inspire movimento e descoberta. 
+                  Elementos decorativos que lembrem viagens e cores que transmitam energia são ideais para o seu lar.
+                   
+       </descricao>
+   </signo>
+
+
+   <signo>
+       <dataInicio>22/12</dataInicio>
+       <dataFim>20/01</dataFim>
+       <signoNome>CAPRICÓRNIO</signoNome>
+       <descricao>Ambicioso e determinado, o capricorniano valoriza a tradição e a estabilidade. 
+                  Se você é de Capricórnio, prefere ambientes que refletem sua natureza prática e reservada. 
+                  Invista em móveis duradouros e em uma decoração que transmita seriedade e elegância.
+       </descricao>
+   </signo>
+
+
+   <signo>
+       <dataInicio>21/01</dataInicio>
+       <dataFim>19/02</dataFim>
+       <signoNome>AQUÁRIO</signoNome>
+       <descricao>Inovador e independente, o aquariano adora pensar fora da caixa. 
+                  Se você é de Aquário, seu espaço deve ser um reflexo da sua mente visionária. 
+                  Peças modernas, tecnologia e uma decoração futurista são ideais para criar um ambiente que inspire as ideias revolucionárias deste signo.
+       </descricao>
+   </signo>
+
+
+   <signo>
+       <dataInicio>20/02</dataInicio>
+       <dataFim>20/03</dataFim>
+       <signoNome>PEIXES</signoNome>
+       <descricao>Sonhador e intuitivo, o pisciano vive em um mundo de imaginação. 
+                  Se você é de Peixes, precisa de um espaço que seja relaxante e criativo ao mesmo tempo. 
+                  Cores suaves, iluminação aconchegante e elementos que tragam tranquilidade são essenciais para o seu ambiente ideal.
+       </descricao>
+   </signo>
+  
+</signos>
