@@ -5,7 +5,7 @@
 <signos>
    <signo>
        <dataInicio>21/03</dataInicio>
-       <dataFim>20/04</dataFim>
+       <dataFim>19/04</dataFim>
        <signoNome>ÁRIES</signoNome>
        <imagem>imagens/gemeos.png</imagem>
        <descricao> Impulsivo, corajoso e sempre pronto para liderar, o ariano adora desafios e novas aventuras. 
@@ -16,7 +16,7 @@
 
 
    <signo>
-       <dataInicio>21/04</dataInicio>
+       <dataInicio>20/04</dataInicio>
        <dataFim>20/05</dataFim>
        <signoNome>TOURO</signoNome>
        <descricao>Os taurinos são conhecidos por sua persistência e apreço pelas coisas boas da vida. 
@@ -74,7 +74,7 @@
 
    <signo>
        <dataInicio>23/09</dataInicio>
-       <dataFim>23/10</dataFim>
+       <dataFim>22/10</dataFim>
        <signoNome>LIBRA</signoNome>
        <descricao>Amante da harmonia e da beleza, o libriano busca equilíbrio em todos os aspectos da vida. 
                   Se você é de Libra, gosta de ambientes que transmitam paz e sofisticação. 
@@ -110,7 +110,7 @@
 
    <signo>
        <dataInicio>22/12</dataInicio>
-       <dataFim>20/01</dataFim>
+       <dataFim>19/01</dataFim>
        <signoNome>CAPRICÓRNIO</signoNome>
        <descricao>Ambicioso e determinado, o capricorniano valoriza a tradição e a estabilidade. 
                   Se você é de Capricórnio, prefere ambientes que refletem sua natureza prática e reservada. 
@@ -120,8 +120,8 @@
 
 
    <signo>
-       <dataInicio>21/01</dataInicio>
-       <dataFim>19/02</dataFim>
+       <dataInicio>20/01</dataInicio>
+       <dataFim>18/02</dataFim>
        <signoNome>AQUÁRIO</signoNome>
        <descricao>Inovador e independente, o aquariano adora pensar fora da caixa. 
                   Se você é de Aquário, seu espaço deve ser um reflexo da sua mente visionária. 
@@ -131,7 +131,7 @@
 
 
    <signo>
-       <dataInicio>20/02</dataInicio>
+       <dataInicio>19/02</dataInicio>
        <dataFim>20/03</dataFim>
        <signoNome>PEIXES</signoNome>
        <descricao>Sonhador e intuitivo, o pisciano vive em um mundo de imaginação. 

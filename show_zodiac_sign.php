@@ -1,29 +1,12 @@
 <?php include('layout/header.php');?>
 
-<?php
-
-echo '<body style="background: linear-gradient(135deg, #000f2b 0%, #13576e 50%, #489bcf 100%);
-margin: 0; 
-display: flex; 
-flex-direction: column;
-align-items: center; 
-font-family: \'Segoe UI\', Tahoma, Geneva, Verdana, sans-serif; 
-min-height: 100vh;
-justify-content:center;
-max-width: 400px; 
-width: 90%;
-
-
-
-
-   text-align: justify;   /* Justifica o texto */
-    text-justify: inter-word; /* Melhora o espaçamento entre palavras */
-    max-width: 80%;        /* Evita que o texto encoste nas bordas do card */
-    margin: 0 auto;        /* Centraliza o bloco do parágrafo no meio da tela */
-    line-height: 1.6;      /* Melhora a leitura aumentando o espaço entre linhas */
-
-">'
-?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de Signos</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
 
  <?php
 
@@ -38,39 +21,49 @@ foreach ($signos ->signo as $signo) {
     $data_inicio = DateTime::createFromFormat('d/m', (string)$signo->dataInicio);
     $data_fim = DateTime::createFromFormat('d/m', (string)$signo->dataFim);
 
-
-    $data_inicio->setDate($data_nascimento->format('Y'), $data_inicio->format('m'), $data_inicio->format('d'));
-    $data_fim->setDate($data_nascimento->format('Y'), $data_fim->format('m'), $data_fim->format('d'));
-
-    $ano = $data_nascimento->format('Y');//INSERIDO PARA TESTAR
-
-    $data_inicio->setDate($ano, $data_inicio->format('m'), $data_inicio->format('d'));//INSERIDO PARA TESTAR
-    $data_fim->setDate($ano, $data_fim->format('m'), $data_fim->format('d'));//INSERIDO PARA TESTAR
-
+    $ano_nasc = $data_nascimento->format('Y'); 
+    
+    $data_inicio->setDate($ano_nasc, $data_inicio->format('m'), $data_inicio->format('d'));//INSERIDO PARA TESTAR
+    $data_fim->setDate($ano_nasc, $data_fim->format('m'), $data_fim->format('d'));//INSERIDO PARA TESTAR
 
 
     if ($data_inicio > $data_fim){
         $data_fim->modify('+1 year');
-        
-        
-
-        if ($data_nascimento < $data_inicio || $data_nascimento > $data_fim){
-             $signo_encontrado = true;
+                
         }
-    }
 
-    if ($data_nascimento >= $data_inicio && $data_nascimento <= $data_fim){
-        echo "<h1 style = 'color: #E3B448; fmax-width: 400px'>{$signo->signoNome}</h1>";
-        
-        echo "<p style = 'color: white; font-size:1.8rem;'>{$signo->descricao}</p>";
-        $signo_encontrado = true;
+        if ($data_nascimento >= $data_inicio && $data_nascimento <= $data_fim){
+            $signo_encontrado = true;
+            
 
         
-
     switch ($signo->signoNome) {
     case "ÁRIES":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Coragem, determinação e liderança natural</p>";
+
+           echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '> Coragem, determinação e liderança natural</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/aries.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
+                    
+      
         break;
 
     case "TOURO":
@@ -143,13 +136,16 @@ foreach ($signos ->signo as $signo) {
 }    
 
 if (!$signo_encontrado) {
-    echo "<h1 style='color: white;'>Sígno não identificado, verifique a data informada</h1>";
 
- 
+echo "<div class='retornar'>";
+echo "<h1 style='color: white; align-items: center; display: flex;
+align-items: center;justify-content:center;max-width: 500px; 
+'>Sígno inexistente!</h1>";        
 
-    
-    // Apenas o HTML do botão
-    echo "<button id='btn-corrigir-data' style='display: block;  padding: 15px; font-size: 25px; margin-top: 15px; cursor: pointer; width: 400px;border: none;border-radius: 5px;'>Voltar</button>";
+  echo "<button id='btn-corrigir-data'>Página Inicial</button>";
+
+echo "</div>";
+
     
 }
 
