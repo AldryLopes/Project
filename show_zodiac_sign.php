@@ -32,12 +32,14 @@ foreach ($signos ->signo as $signo) {
                 
         }
 
-        if ($data_nascimento >= $data_inicio && $data_nascimento <= $data_fim){
+     if ($data_nascimento >= $data_inicio && $data_nascimento <= $data_fim){
             $signo_encontrado = true;
             
 
         
     switch ($signo->signoNome) {
+        
+
     case "ÁRIES":
 
            echo "<div class='mostrar-signo'>";
@@ -67,58 +69,285 @@ echo "</div>";
         break;
 
     case "TOURO":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Persistência, sensorialidade, e busca por segurança.</p>";
+        echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '> Persistência, sensorialidade, e busca por segurança</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/touro.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
         break;
 
     case "GÊMEOS":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Curiosidade, adaptabilidade, e comunicação.</p>";
+        echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '>Curiosidade, adaptabilidade, e comunicação</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/gemeos.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
         break;
 
     case "CÂNCER":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Sensibilidade, instinto protetor, e forte ligação emocional.</p>";
+        echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '>Sensibilidade, instinto protetor, e forte ligação emocional</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/cancer.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
+      
         break;
 
     case "LEÃO":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Criatividade, autoconfiança, e brilho próprio.</p>";
+        echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '>Criatividade, autoconfiança, e brilho próprio</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/leao.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
+       
         break;
 
     case "VIRGEM":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Organização, atenção aos detalhes, prestatividade.</p>";
+        echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '>Organização, atenção aos detalhes, prestatividade</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/virgem.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
+       
         break;
 
     case "LIBRA":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Diplomacia, senso de justiça, e busca pelo equilíbrio.</p>";
+        echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '>Diplomacia, senso de justiça, e busca pelo equilíbrio</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/libra.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
+       
         break;
 
     case "ESCORPIÃO":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Intensidade, transformação, e mistério.</p>";
+        echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '>Intensidade, transformação, e mistério</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/escorpiao.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
+       
         break;
 
     case "SAGITÁRIO":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Otimismo, liberdade, e sede de conhecimento.</p>";
+        echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '>Otimismo, liberdade, e sede de conhecimento</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/sagitario.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
+       
         break;
 
     case "CAPRICÓRNIO":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Ambição, disciplina, e foco no longo prazo.</p>";
+        echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '>Ambição, disciplina, e foco no longo prazo</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/capricornio.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
+        
         break;
 
     case "AQUÁRIO":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Originalidade, independência e visão de futuro.</p>";
+        echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '>Originalidade, independência e visão de futuro</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/aquario.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
         break;
 
     case "PEIXES":
-        echo "<p style = 'font-weight:bold; font-size:1.5rem; color: RGB(219, 203, 183); '> Empatia, espiritualidade e sensibilidade artística.</p>";
+        echo "<div class='mostrar-signo'>";
+
+        echo "<h1 '>{$signo->signoNome}</h1>";
+               echo "<p style = 'font-weight:bold; 
+               font-size:1.5rem; color: RGB(219, 203, 183); 
+               text-align: justify;
+                line-height: 1.6;
+                margin-top: 8px;'
+               '>Empatia, espiritualidade e sensibilidade artística</p>";
+
+        
+        echo "<p style = 'color: white; font-size:1.8rem;
+        text-align: justify;
+                line-height: 1.5;
+                margin-top: 20px;
+                  margin-bottom: 15px;'
+        >{$signo->descricao}</p>";
+
         echo "<img src='assets/imgs/peixes.jpeg' alt='Descrição da Imagem'>";
+
+
+echo "</div>";
         break;
 
 
