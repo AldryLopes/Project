@@ -1,4 +1,4 @@
-<?php include('layout/header.php');?>
+<?php include('layouts/header.php');?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
