@@ -1,4 +1,4 @@
-<?php include('layout/header.php');?>
+<?php include('layouts/header.php');?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -15,22 +15,31 @@ $data_nasc_inserida = $_POST['data_nascimento'];
 $signos = simplexml_load_file("signos.xml");
 
 $data_nascimento = new DateTime($data_nasc_inserida);
+$data_nascimento->setTime(0, 0, 0);
 $signo_encontrado = false;
 
 foreach ($signos ->signo as $signo) {
-    $data_inicio = DateTime::createFromFormat('d/m', (string)$signo->dataInicio);
-    $data_fim = DateTime::createFromFormat('d/m', (string)$signo->dataFim);
+    $partes_inicio = explode('/', (string)$signo->dataInicio);
+    $partes_fim = explode('/', (string)$signo->dataFim);
 
-    $ano_nasc = $data_nascimento->format('Y'); 
-    
-    $data_inicio->setDate($ano_nasc, $data_inicio->format('m'), $data_inicio->format('d'));//INSERIDO PARA TESTAR
-    $data_fim->setDate($ano_nasc, $data_fim->format('m'), $data_fim->format('d'));//INSERIDO PARA TESTAR
+    $ano_nasc = (int)$data_nascimento->format('Y');
+    $mes_nasc = (int)$data_nascimento->format('m');
 
+    $data_inicio = new DateTime();
+    $data_inicio->setDate($ano_nasc, (int)$partes_inicio[1], (int)$partes_inicio[0]);
+    $data_inicio->setTime(0, 0, 0);
+
+    $data_fim = new DateTime();
+    $data_fim->setDate($ano_nasc, (int)$partes_fim[1], (int)$partes_fim[0]);
+    $data_fim->setTime(0, 0, 0);
 
     if ($data_inicio > $data_fim){
-        $data_fim->modify('+1 year');
-                
+        if ($mes_nasc <= (int)$partes_fim[1]) {
+            $data_inicio->modify('-1 year');
+        } else {
+            $data_fim->modify('+1 year');
         }
+    }
 
      if ($data_nascimento >= $data_inicio && $data_nascimento <= $data_fim){
             $signo_encontrado = true;
