@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const spanTexto = document.getElementById('texto-girar');
-const botao = spanTexto.parentElement; // Pega o botão que envolve o span
+const botao = spanTexto.parentElement; 
 
 botao.addEventListener('mouseover', () => {
     spanTexto.style.transition = "transform 0.5s ease-in-out";

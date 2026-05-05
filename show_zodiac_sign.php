@@ -10,8 +10,10 @@
 <body>
 
 <?php
+
+
 if (!isset($_POST['data_nascimento'])) {
-echo "Por favor, insira uma data.";
+echo "Por favor, insira uma data para consulta.";
 exit;
 }
 
@@ -25,11 +27,9 @@ $ano_nasc = (int)$data_nascimento->format('Y');
 $signo_encontrado = null;
 
 foreach ($signos->signo as $signo) {
-// Extrai dia e mês do XML (formato d/m)
 $dia_mes_inicio = explode('/', (string)$signo->dataInicio);
 $dia_mes_fim = explode('/', (string)$signo->dataFim);
 
-// Cria objetos de data baseados no ano de nascimento do usuário
 $data_inicio = new DateTime();
 $data_inicio->setDate($ano_nasc, (int)$dia_mes_inicio[1], (int)$dia_mes_inicio[0]);
 $data_inicio->setTime(0, 0, 0);
@@ -38,7 +38,6 @@ $data_fim = new DateTime();
 $data_fim->setDate($ano_nasc, (int)$dia_mes_fim[1], (int)$dia_mes_fim[0]);
 $data_fim->setTime(0, 0, 0);
 
-// Ajuste para signos que cruzam o ano (Ex: Capricórnio 22/12 a 19/01)
 if ($data_inicio > $data_fim) {
 if ($data_nascimento >= $data_inicio) {
 $data_fim->modify('+1 year');
@@ -54,9 +53,8 @@ break;
 }
 
 if ($signo_encontrado) {
-$nome = (string)$signo_encontrado->signoNome;
-$descricao = (string)$signo_encontrado->descricao;
-// Definição de frases e imagens baseadas no nome
+$nomeSigno = (string)$signo_encontrado->signoNome;
+$descricaoSigno = (string)$signo_encontrado->descricao;
 $frases = [
 "ÁRIES" => "Coragem, determinação e liderança natural",
 "TOURO" => "Persistência, sensorialidade, e busca por segurança",
@@ -72,13 +70,13 @@ $frases = [
 "PEIXES" => "Empatia, espiritualidade e sensibilidade artística"
 ];
 
-$imagem = strtolower(str_replace(['Á', 'Ê', 'Õ', 'Í'], ['A', 'E', 'O', 'I'], $nome)) . ".jpeg";
+$imagem = strtolower(str_replace(['Á', 'Â','Ã', 'Ê', 'Õ','Ó', 'Í'], ['A', 'A','A', 'E', 'O','O', 'I'], $nomeSigno)) . ".jpeg";
 
 echo "<div class='mostrar-signo'>";
-echo "<h1>{$nome}</h1>";
-echo "<p class='subtitulo-signo'>{$frases[$nome]}</p>";
-echo "<p class='descricao-signo'>{$descricao}</p>";
-echo "<img src='assets/imgs/{$imagem}' alt='{$nome}'>";
+echo "<h1>{$nomeSigno}</h1>";
+echo "<p class='subtitulo-signo'>{$frases[$nomeSigno]}</p>";
+echo "<p class='descricao-signo'>{$descricaoSigno}</p>";
+echo "<img src='assets/imgs/{$imagem}' alt='{$nomeSigno}'>";
 echo "</div>";
 } else {
 echo "<div class='retornar'>";
